@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Work Sans", sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+#hero{
+    height: 700px;
+    /* background-image: url(../assets/hero-bg.png); */
+    /* Have to put Linear gradient first the url with comma. CSS follows first comes first. If put after url, gradient will cover the image. */
+    background: linear-gradient(0deg, rgb(9, 9, 9) 3.482%,rgba(16, 16, 16, 0) 101.632%),url(../assets/hero-bg.png);
+    /* To change BACKGROUND-SIZE of an image have to write (background-size: cover;) command after the image */
+    background-size: cover;
+    display: flex; /* since #hero has only 1 child thats why we did not have to use flex-direction */
+    justify-content: center;
+    align-items: center;
+}
+#hero .hero-content{
+    width: 767px;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+}
+#hero .hero-content .heading{
+    /* width: 205px; /* If you set width and height then TEXT ALIGN will only work in that area */
+    /* height: 28px; */ 
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 450;
+    line-height: 38px;
+    opacity: 0.8;
+    text-align: center;
+    /* letter-spacing: 0%; */
+    margin-bottom: 12px;
+}
+#hero .hero-content h1{
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 18px;
+}
+#hero .hero-content .hero-desc{
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.btn{
+    /* An inline element cannot contain a block-level element! Since <button> is an inline element, we need to put it in a <div>(block element) to align to center */
+    border-radius: 6px;
+    background: rgb(82, 195, 3);
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 15px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Card Box Section -------------------------*/
+#card-box{
+    width: 990px;
+    margin: 50px auto;
+}
+.card-holder{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    max-width: 318px;
+    /* max-height: 391px; */
+    display: flex;
+    flex-direction: column;
+    /* If align-items is centering things horizontally and justify-content isn't working, it likely means you're using Flexbox in the wrong direction. If you use flex-direction: column, it flips: 
+    
+    justify-content → aligns items vertically
+    align-items → aligns items horizontally */
+    
+    /* justify-content: center; */ 
+    align-items: center;
+    gap: 18px;
+}
+#card-box .subtitle{
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 16px;
+    opacity: 0.6;
+}
+#card-box .title{
+    margin: 0 235px;
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+/* .card .pics{
+    width: 318px;
+} */
+.card .pics img{
+    width: 318px; /* instead width:100% */
+}
+.card span{
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 18px;
+    padding: 10px 24px 10px 24px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 8px;
+    background: rgba(82, 195, 3, 0.15);
+}
+.card h1{
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0%;
+    /* text-align: center; */
+}
+.card p{
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.social{
+    width: 1449px;
+    height: 503px;
+    background: url(../assets/social-bg.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-container{
+    width: 990px;
+}
+.social-container h2{
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 0 193px;
+    margin-bottom: 39px
+}
+.social-container p{
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.6;
+}
+.social-container h3{
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 36px 0;
+    opacity: 0.7;
+    padding: 22px 8px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+    border-top: 1px solid rgba(16, 16, 16, 0.2);
+}
+/* Font Awesome icons are inline-block by default, but some versions may behave differently depending on your setup.
+    If you apply width and it seems like nothing changes, make sure the icon isn't inside a flex or grid container that's overriding it. */
+.social-links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social-links a:hover{
+    opacity: 0.6;
+}
